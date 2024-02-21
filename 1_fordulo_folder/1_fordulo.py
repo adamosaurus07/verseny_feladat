@@ -1,5 +1,6 @@
 """
 # 1. feladat: relatív prímek
+a,
 counter = 0
 number = []
 
@@ -19,6 +20,7 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as
           counter += 1
 print("A fájlban tárolt számok között", counter, "olyan szerepel, amely a 1310438493 számmal relatív prím.")
 """
+b,
 counter = 0
 with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as f:
     numbers = f.readlines()
