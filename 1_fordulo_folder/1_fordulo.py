@@ -25,4 +25,4 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as
     for i in numbers:
         if sorted(str(i)) == sorted(str(2354211341)):
             counter += 1
-print("A fájlban tárolt számok között", counter, "olyan szerepel, amely a 2354211341 szám permutációja.")
+print("A fájlban tárolt számok között", counter, "olyan szerepel, amely a 2354211341 szám permutációja.")sgsg
