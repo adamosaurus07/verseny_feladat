@@ -1,5 +1,5 @@
-"""
-# 1. feladat: relatív prímek
+
+# 1. FELADAT: relatív prímek
 # a feladat
 counter = 0
 number = []
@@ -34,3 +34,18 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as
 		if sorted(str(i)) == sorted(str(num2)):
 			counter += 1
 print("A fájlban tárolt számok között", counter, "olyan szerepel, amelynek a számjegyei megegyeznek a 2354211341 számjegyeivel.")
+
+# 2. FELADAT
+# A, feladata: populáció
+with open("C:/Users/theki/Documents/Python/1_fordulo_folder/telepules.txt", "r") as f:
+   village = f.readlines()
+   village = [i.strip() for i in village]
+
+
+population_numbers = [int(i.split()[-4]) for i in village]
+min_population_num = min(population_numbers)
+print(min_population_num, 'is the minimum population number.')
+
+population_numbers.remove(min_population_num)
+new_population_num = min(population_numbers)
+print(new_population_num, 'is the second least population number.')
