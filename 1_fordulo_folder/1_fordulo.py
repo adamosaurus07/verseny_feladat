@@ -66,6 +66,5 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/telepules.txt", "r")
 
 
 norths = [float(i.split()[2]) for i in village]
-most_northest = [max(norths)]
-print(most_northest)
 
+print(max(norths), 'is the maximum latitude.')
