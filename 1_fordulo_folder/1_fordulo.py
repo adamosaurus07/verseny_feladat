@@ -1,5 +1,8 @@
 
+
 # 1. FELADAT: relatív prímek
+
+
 # a feladat
 counter = 0
 number = []
@@ -20,7 +23,7 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as
           counter += 1
 print("A fájlban tárolt számok között", counter, "olyan szerepel, amely a 1310438493 számmal relatív prím.")
 
-# b feladat megoldas
+# B feladat megoldas
 counter = 0
 
 num2 = 2354211341
@@ -35,7 +38,12 @@ with open("C:/Users/theki/Documents/Python/1_fordulo_folder/szamok.txt", "r") as
 			counter += 1
 print("A fájlban tárolt számok között", counter, "olyan szerepel, amelynek a számjegyei megegyeznek a 2354211341 számjegyeivel.")
 
+
+
 # 2. FELADAT
+
+
+
 # A, feladata: populáció
 with open("C:/Users/theki/Documents/Python/1_fordulo_folder/telepules.txt", "r") as f:
    village = f.readlines()
@@ -49,3 +57,15 @@ print(min_population_num, 'is the minimum population number.')
 population_numbers.remove(min_population_num)
 new_population_num = min(population_numbers)
 print(new_population_num, 'is the second least population number.')
+
+# B, FELADAT
+
+with open("C:/Users/theki/Documents/Python/1_fordulo_folder/telepules.txt", "r") as f:
+   village = f.readlines()
+   village = [i.strip() for i in village]
+
+
+norths = [float(i.split()[2]) for i in village]
+most_northest = [max(norths)]
+print(most_northest)
+
